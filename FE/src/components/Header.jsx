@@ -3,7 +3,7 @@ import logo from "../assets/images/logo.png";
 const Header = () => {
   return (
     <div className=" h-24 max-w-7xl mx-auto flex justify-between items-center">
-      <img className="w-40 h-20" src={logo} alt="Ironhack logo" />
+      <img className="w-60 " src={logo} alt="Ironhack logo" />
       <Search />
       <div className="flex gap-1 text-base text-white items-center ">
         <img
