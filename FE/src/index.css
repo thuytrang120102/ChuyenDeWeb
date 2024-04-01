@@ -2,7 +2,7 @@
 
 body {
   font-family: "Lexend", sans-serif;
-  @apply font-normal;
+  @apply font-normal bg-slate-600;
 }
 
 @tailwind base;
