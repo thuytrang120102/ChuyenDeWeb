@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 import CategoryBar from "../components/CategoryBar";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import kong from "../assets/images/homepage/kong.jpg"
 import FilmCard from "../components/FilmCard";
+import Banner from "../components/Banner";
 
 const types = ["Phim đang chiếu", "Phim sắp chiếu"]
 
@@ -28,9 +28,8 @@ const Homepage = () => {
     <div className="max-w-7xl mx-auto">
       <Header />
       <CategoryBar />
+      <Banner/>
       <div className="flex flex-col gap-5">
-        <div className="w-full">
-          <img className="w-full" src={kong}  />  </div>
         <div className="flex flex-col gap-3 ">
           <h1 className="text-white text-center text-3xl">PHIM ĐANG CHIẾU</h1>
           
