@@ -13,14 +13,14 @@ const FilmPage = () => {
   const [type, setType] = useState("Phim đang chiếu")
   
   useEffect(()=> {
-    fetch("https://cinestar.com.vn/_next/data/soeA7SSsB1xBn19KUx2x5/index.json")
+    fetch("https://cinestar.com.vn/_next/data/k5FG7BO4DqMDEfCOuIX5o/index.json")
     .then((response) => {
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
       return response.json();
     })
-    .then((data) => {(type === "Phim đang chiếu") ? setFilms(data.pageProps.res.listMovie) : setFilms(data.pageProps.res.listComingMovie)})
+    .then((data) => {(type === types[0]) ? setFilms(data.pageProps.res.listMovie) : setFilms(data.pageProps.res.listComingMovie)})
   }, [type])
 
   return (
@@ -41,7 +41,7 @@ const FilmPage = () => {
           <div className="w-4/5 py-5 flex flex-col gap-6 justify-center items-center">
             <div className="w-full grid grid-cols-3 gap-5">
               {films.map(film => { 
-                return <FilmCard key={film.id} name={film.name_vn}/>
+                return <FilmCard key={film.id} film={film} type={type}/>
               })}
             </div>
             <Pagination/>
