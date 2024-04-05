@@ -12,10 +12,10 @@ const FilmCard = ({type}) => {
                    <h1 className="border border-yellow-200 rounded-md p-1">Phụ đề</h1>
                   <h1 className="bg-green-400 rounded-md p-1">2D</h1>
                 </div>
-              <h1 className="text-[20px] text-white hover:text-black">EXHUMA</h1>
+              <h1 className="text-[20px] text-white hover:text-green-600">EXHUMA</h1>
               <div className="flex flex-row ">
               <h1 className="text-white">Thể loại phim: </h1>
-              <h1 className="text-white hover:text-black"> Horror</h1>
+              <h1 className="text-white hover:text-green-600"> Horror</h1>
               </div>
                 {type === "Phim đang chiếu" ? (
                      <div className="flex flex-row gap-2">
