@@ -25,8 +25,6 @@ const Homepage = () => {
 
   return (
     <div className="max-w-7xl mx-auto">
-      <Header />
-      <CategoryBar />
       <Banner />
       <div className="flex flex-col gap-5">
         <div className="flex flex-col gap-3 ">
@@ -55,7 +53,6 @@ const Homepage = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 };

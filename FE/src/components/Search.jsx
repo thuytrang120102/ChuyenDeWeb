@@ -1,11 +1,11 @@
 const Search = () => {
   return (
     <div className="xl:w-96">
-      <div className="relative flex w-full flex-wrap items-stretch">
+      <div className="relative flex flex-wrap items-stretch w-full">
         <input
           type="search"
           className="relative m-0 block flex-auto rounded border border-solid border-neutral-300 bg-transparent bg-clip-padding px-3 py-[0.25rem] text-base font-normal leading-[1.6] text-neutral-700 outline-none transition duration-200 ease-in-out focus:z-[3] focus:border-primary focus:text-neutral-700 focus:shadow-[inset_0_0_0_1px_rgb(59,113,202)] focus:outline-none dark:border-neutral-600 dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:focus:border-primary"
-          placeholder="Search"
+          placeholder="Tìm kiếm phim..."
           aria-label="Search"
           aria-describedby="button-addon2"
         />
@@ -18,7 +18,7 @@ const Search = () => {
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 20 20"
             fill="currentColor"
-            className="h-5 w-5"
+            className="w-5 h-5"
           >
             <path
               fillRule="evenodd"

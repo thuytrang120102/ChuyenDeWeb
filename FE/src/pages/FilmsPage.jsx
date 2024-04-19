@@ -25,12 +25,10 @@ const FilmPage = () => {
   }, [type]);
 
   return (
-    <div className="bg-neutral-900 text-white">
-      <div className="relative max-w-7xl mx-auto">
-        <Header />
-        <CategoryBar />
+    <div className="text-white bg-neutral-900">
+      <div className="relative mx-auto max-w-7xl">
         <div className="flex gap-8 p-3">
-          <div className="w-1/5 pt-14 flex flex-col gap-8 py-6 text-center  text-xl uppercase">
+          <div className="flex flex-col w-1/5 gap-8 py-6 text-xl text-center uppercase pt-14">
             {types.map((t) => {
               return (
                 <div
@@ -45,8 +43,8 @@ const FilmPage = () => {
               );
             })}
           </div>
-          <div className="w-4/5 py-5 flex flex-col gap-6 justify-center items-center">
-            <div className="w-full grid grid-cols-3 gap-5">
+          <div className="flex flex-col items-center justify-center w-4/5 gap-6 py-5">
+            <div className="grid w-full grid-cols-3 gap-5">
               {films.map((film) => {
                 return (
                   <Link to={`/film/${film.id}`}>
@@ -59,7 +57,6 @@ const FilmPage = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 };

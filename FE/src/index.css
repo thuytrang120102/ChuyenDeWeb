@@ -1,19 +1,43 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
 
 body {
   font-family: "Lexend", sans-serif;
-  @apply font-normal bg-slate-600;
+  @apply font-normal text-white bg-slate-600;
 }
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-.active .category{
-  @apply text-blue-500
+.active .category {
+  @apply text-blue-500;
+}
+@keyframes update-form-visible {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(50%);
+  }
+}
+@keyframes update-form-invisible {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+@keyframes film-detail {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(50%);
+  }
 }
